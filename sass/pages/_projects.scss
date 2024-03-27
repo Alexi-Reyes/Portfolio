@@ -1,0 +1,63 @@
+.project-page {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 40px;
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .project__image {
+        width: 400px;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .project__info {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 20px;
+        }
+
+        h3 {
+            padding-block: 10px;
+            text-align: center;
+        }
+
+        .links,
+        .technologies-wrapper {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+
+            img {
+                height: 50px;
+            }
+        }
+
+        .links img:hover {
+            cursor: pointer;
+            scale: 1.25;
+        }
+    }
+
+    a {
+        padding-block: 20px;
+    }
+
+    .btn-return {
+        padding: 5px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
