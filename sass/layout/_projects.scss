@@ -1,0 +1,6 @@
+.project-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
+    max-width: 90%;
+    gap: 20px;
+}

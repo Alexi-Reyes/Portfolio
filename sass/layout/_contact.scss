@@ -1,0 +1,29 @@
+.contact {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    img {
+        justify-self: center;
+        align-self: center;
+    }
+
+    @media (max-width: 1000px) {
+        grid-template-columns: 1fr 0.5fr;
+    }
+
+    @media (max-width: 500px) {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            height: 200px;
+            width: 200px;
+        }
+    }
+}

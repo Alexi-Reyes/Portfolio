@@ -1,0 +1,26 @@
+.lang-dropdown {
+    position: relative;
+    display: inline-block;
+    background-color: lighten($color: #262b2f, $amount: 10%);
+    border-radius: 5px;
+}
+
+.selected-lang,
+.lang-dropdown:hover .lang-dropdown-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lang-dropdown:hover {
+    border-radius: 5px 5px 0 0;
+}
+
+.lang-dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+    background-color: darken($color: #262b2f, $amount: 10%);
+    z-index: 1;
+}

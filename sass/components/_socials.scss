@@ -1,0 +1,15 @@
+.mySocials {
+    display: flex;
+    padding-block: 10px;
+    gap: 15px;
+    padding-bottom: 20px;
+
+    img {
+        width: 40px;
+        height: 40px;
+
+        &:hover {
+            scale: 1.25;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+@use "../abstracts/" as *;
+
+.project {
+    background-color: #262b2f;
+    border: solid #551a8b 1px;
+    border-radius: 10px;
+    animation: scaleDown 0.5s forwards;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+
+    &:hover {
+        animation: scaleUp 0.5s forwards;
+    }
+}
+
+.project__thumbnail {
+    border-radius: 10px 10px 0 0;
+}
+
+.project__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: 10px;
+    padding-bottom: 5px;
+
+    * {
+        padding-block: 5px;
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+.other-projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: lighten($color: #262b2f, $amount: 10%);
+
+    img {
+        height: 100px;
+        width: 100px;
+    }
+
+    h3 {
+        text-align: center;
+    }
+}
+
+@keyframes scaleUp {
+    0% {
+        scale: 1;
+    }
+
+    100% {
+        scale: 1.05;
+    }
+}
+
+@keyframes scaleDown {
+    0% {
+        scale: 1.05;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
